@@ -12,57 +12,68 @@
     margin: 0px;
     padding: 0px;
 }
-
+/* 
 #portada{
-
-}
+    background-color:  whitesmoke
+} */
 
 header{
     width: 100%;
-    height: 75px;
+    height: 80px;
     background-color: rgba(255,255,255,0.6);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #logo{
     display: inline-block;
     vertical-align: top;
-    width: 300px;
+    width: 35%;
     height: 70px;
     padding-top: 5px;
     padding-left: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
-#logo2{
-    font-size: 25px;
+.buscador{
+    background-color: whitesmoke;
+    font-size: 50px;
     display: inline-block;
     vertical-align: top;
-    width: 600px;
+    width: 20%;
     height: 70px;
     padding-top: 5px;
-    padding-left: 10px;
-    border: 1px solid blue;
+    padding-right: 0px;
+    /* border: 1px solid blue; */
 }
 
 #logo img{
     height: 100%;
 }
 
+#login2{
+    display: inline-block;
+    /* vertical-align: left; */
+    width: 20%;
+    height: 70px;
+    padding-left: 50px;
+    /* border: 1px solid blue; */
+    margin-left: 20%;
+}
+
 a.botoncito{
-    background-color: aqua;
     color: rgb(66, 172, 233);
     display: inline-block;
-    vertical-align: left;
+    vertical-align: right;
     text-decoration: none;
-    width: 140px;
-    height: 25px;
-    padding: 10px 10px;
-    margin-left: 45px; margin-right: 1px;
+    width: 40%;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-left: 50px; 
     margin-top: 12px;
     font-size: 20px;
     font-family: sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
 nav{
@@ -70,29 +81,42 @@ nav{
     vertical-align: top;
     height: 40px;
     width: 75%;
-    padding-top: 25px;
+    
     text-align: center;
     font-size: 25px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 nav a{
-    background-color: aqua;
+    /* background-color: rgb(135, 240, 240); */
+    background-color: azure;
+    border-radius: 30px;
+    margin: 25px;
+    border: 1px royalblue solid;
+    text-decoration: none;
 }
+
+.lupa{
+    width: 20%;
+    height: 30%;
+}
+
 </style>
-<body>
+<body style="background-color:whitesmoke">
     <section id="portada">
         <header>
             <div id="logo">
                 <a href="https://www.wish.com/"><img src="logo.png" alt="" ></a> 
             </div>
 
-            <div id="logo2">
-                <p>¿Qué quieres encontrar?</p>
+            <div class="buscador" >
+                <img class="lupa" src="lupa.png">
+                <input type="text"  name="usuario" placeholder="¿Qué quieres encontrar?">
+                <!-- <p>¿Qué quieres encontrar?</p> -->
             </div>
 
-            <div id="logo">
-                <a class="botoncito" href="https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=11711571243&campaign_id=11711571243&from_ad=goog_kw_search&keyword=wish&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5f-BKTYIlR-WX5LIjiHVZwN77Vn_RM0wsXLs4FPMjYsKk2VAqxZxH4aAp_BEALw_wcB">Iniciar sesión</a>
+            <div id="login2">
+                <a class="botoncito" href="https://www.wish.com/" >Iniciar sesión</a>
             </div>
              
 
@@ -104,10 +128,10 @@ nav a{
     <br>
         <div class="contenido">
             <nav>
-                <a href="https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=11711571243&campaign_id=11711571243&from_ad=goog_kw_search&keyword=wish&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5f-BKTYIlR-WX5LIjiHVZwN77Vn_RM0wsXLs4FPMjYsKk2VAqxZxH4aAp_BEALw_wcB&hide_login_modal=true" >Cuña</a>
-                <a href="https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=11711571243&campaign_id=11711571243&from_ad=goog_kw_search&keyword=wish&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5f-BKTYIlR-WX5LIjiHVZwN77Vn_RM0wsXLs4FPMjYsKk2VAqxZxH4aAp_BEALw_wcB&hide_login_modal=true" >Cargadores</a>
-                <a href="https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=11711571243&campaign_id=11711571243&from_ad=goog_kw_search&keyword=wish&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5f-BKTYIlR-WX5LIjiHVZwN77Vn_RM0wsXLs4FPMjYsKk2VAqxZxH4aAp_BEALw_wcB&hide_login_modal=true" >Escáners</a>
-                <a href="https://www.wish.com/search/trending?from_ad=goog_kw_search&campaign_id=11711571243&campaign_id=11711571243&from_ad=goog_kw_search&keyword=wish&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5f-BKTYIlR-WX5LIjiHVZwN77Vn_RM0wsXLs4FPMjYsKk2VAqxZxH4aAp_BEALw_wcB&hide_login_modal=true" >Reproductor CD</a>
+                <a href="https://www.wish.com/search/cu%C3%B1a" >Cuña</a>
+                <a href="https://www.wish.com/search/cargadores" >Cargadores</a>
+                <a href="https://www.wish.com/search/esc%C3%A1neres" >Escáners</a>
+                <a href="https://www.wish.com/search/reproductor%20cd" >Reproductor CD</a>
              </nav>
         </div>
     
